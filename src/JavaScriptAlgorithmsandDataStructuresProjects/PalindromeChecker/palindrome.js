@@ -3,7 +3,6 @@ const palindrome = (str) => {
     let compareStr = '';
     for (let i = 0; i < reverseStrArr.length; i++) {
         if (/[a-z\d]/.test(reverseStrArr[i])) {
-            // compareStrArr.push(reverseStrArr[i]);
             compareStr += reverseStrArr[i];
         }
     }
