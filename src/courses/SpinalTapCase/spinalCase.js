@@ -1,9 +1,7 @@
 const spinalCase = (str) => {
     let removeCamel = str.replace(/[A-Z]/g, char => ` ${char}`);
     let splitStr = removeCamel.trim().split(/[\W_]+/);
-    for (let i = 0; i < splitStr.length; i++) {
-        splitStr[i] = splitStr[i].toLowerCase();
-    }
+    splitStr.forEach((word, idx) => splitStr[idx] = word.toLowerCase());
     return splitStr.join('-');
 }
 

@@ -1,15 +1,7 @@
 const addTogether = (...arr) => {
     if (typeof arr[0] === 'number') {
-        if (arr.length > 1) {
-            if (typeof arr[1] === 'number') {
-                return arr[0] + arr[1];
-            }
-        } else {
-            return (num) => {
-                if (typeof num === 'number')
-                    return arr[0] + num;
-            }
-        }
+        if (arr.length > 1) if (typeof arr[1] === 'number') return arr[0] + arr[1];
+        if (arr.length <= 1) return (num) => {if (typeof num === 'number') return arr[0] + num;};
     }
 }
 

@@ -5,15 +5,10 @@ const rot13 = (str) => {
         if (/[A-Z]/.test(strArr[i])) {
             let strToASCII = strArr[i].charCodeAt(0);
             let asciiToStr;
-            if (strToASCII >= 65 && strToASCII <= 77) {
-                strToASCII += 13;
-                asciiToStr = String.fromCharCode(strToASCII);
-                rotArr.push(asciiToStr);
-            } else {
-                strToASCII -= 13;
-                asciiToStr = String.fromCharCode(strToASCII);
-                rotArr.push(asciiToStr);
-            }
+            if (strToASCII >= 65 && strToASCII <= 77) strToASCII += 13;
+            else strToASCII -= 13;
+            asciiToStr = String.fromCharCode(strToASCII);
+            rotArr.push(asciiToStr);
         } else {
             rotArr.push(strArr[i]);
         }

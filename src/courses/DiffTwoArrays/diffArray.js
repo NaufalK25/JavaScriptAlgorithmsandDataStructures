@@ -1,15 +1,7 @@
 const diffArray = (arr1, arr2) => {
     let resArr = [];
-    for (let i = 0; i < arr2.length; i++) {
-        if (!arr1.includes(arr2[i])) {
-            resArr.push(arr2[i]);
-        }
-    }
-    for (let i = 0; i < arr1.length; i++) {
-        if (!arr2.includes(arr1[i])) {
-            resArr.push(arr1[i]);
-        }
-    }
+    for (let words of arr1) if (!arr2.includes(words)) resArr.push(words);
+    for (let words of arr2) if (!arr1.includes(words)) resArr.push(words);
     return resArr;
 }
 

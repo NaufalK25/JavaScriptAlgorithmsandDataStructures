@@ -1,11 +1,8 @@
 const myReplace = (str, before, after) => {
     let beforeArr = before.split('')
     let afterArr = after.split('')
-    if (beforeArr[0] === beforeArr[0].toUpperCase()) {
-        afterArr[0] = afterArr[0].toUpperCase();
-    } else {
-        afterArr[0] = afterArr[0].toLowerCase();
-    }
+    afterArr[0] = afterArr[0].toLowerCase();
+    if (beforeArr[0] === beforeArr[0].toUpperCase()) afterArr[0] = afterArr[0].toUpperCase();
     return str.replace(beforeArr.join(''), afterArr.join(''));
 }
 

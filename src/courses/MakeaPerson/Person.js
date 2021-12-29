@@ -1,16 +1,14 @@
-const Person = function (firstAndLast) {
-    this.getFullName = () => firstAndLast;
-    this.getFirstName = () => firstAndLast.split(' ')[0];
-    this.getLastName = () => firstAndLast.split(' ')[1];
-    this.setFirstName = (firstName) => {
-        firstAndLast = `${firstName} ${firstAndLast.split(' ')[1]}`;
-    };
-    this.setLastName = (lastName) => {
-        firstAndLast = `${firstAndLast.split(' ')[0]} ${lastName}`;
-    };
-    this.setFullName = (fullName) => firstAndLast = fullName
-    return firstAndLast;
-};
+class Person {
+    constructor(firstAndLast) {
+        this.getFullName = () => firstAndLast;
+        this.getFirstName = () => firstAndLast.split(' ')[0];
+        this.getLastName = () => firstAndLast.split(' ')[1];
+        this.setFirstName = (firstName) => firstAndLast = `${firstName} ${firstAndLast.split(' ')[1]}`;
+        this.setLastName = (lastName) => firstAndLast = `${firstAndLast.split(' ')[0]} ${lastName}`;
+        this.setFullName = (fullName) => firstAndLast = fullName;
+        return firstAndLast;
+    }
+}
 
 const bob = new Person('Bob Ross');
 console.log(bob.getFullName(), 'Bob Ross');

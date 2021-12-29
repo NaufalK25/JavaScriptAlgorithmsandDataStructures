@@ -1,9 +1,7 @@
 const sumAll = (arr) => {
     let total = 0;
     arr = (arr[0] < arr[1]) ? arr : arr.reverse();
-    for (let i = arr[0]; i < arr[1] + 1; i++) {
-        total += i;
-    }
+    for (let i = arr[0]; i < arr[1] + 1; i++) total += i;
     return total;
 }
 

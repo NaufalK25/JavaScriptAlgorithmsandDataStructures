@@ -1,11 +1,7 @@
 const palindrome = (str) => {
     let reverseStrArr = str.toLowerCase().split('');
     let compareStr = '';
-    for (let i = 0; i < reverseStrArr.length; i++) {
-        if (/[a-z\d]/.test(reverseStrArr[i])) {
-            compareStr += reverseStrArr[i];
-        }
-    }
+    for (let char of reverseStrArr) if (/[a-z\d]/.test(char)) compareStr += char;
     let reverseStr = compareStr.split('').reverse().join('');
     return compareStr === reverseStr;
 }

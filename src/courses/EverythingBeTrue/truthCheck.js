@@ -1,6 +1,4 @@
-const truthCheck = (collection, pre) => {
-    return collection.every(x => x.hasOwnProperty(pre) && !!x[pre]);
-}
+const truthCheck = (collection, pre) => collection.every(x => x.hasOwnProperty(pre) && !!x[pre]);
 
 console.log(truthCheck([{ "user": "Tinky-Winky", "sex": "male" }, { "user": "Dipsy", "sex": "male" }, { "user": "Laa-Laa", "sex": "female" }, { "user": "Po", "sex": "female" }], "sex"), true);
 console.log(truthCheck([{ "user": "Tinky-Winky", "sex": "male" }, { "user": "Dipsy" }, { "user": "Laa-Laa", "sex": "female" }, { "user": "Po", "sex": "female" }], "sex"), false);

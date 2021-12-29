@@ -2,13 +2,7 @@ const whatIsInAName = (collection, source) => {
     let sourceKeys = Object.keys(source);
     return collection.filter(x => {
         let checkKeys = true;
-        sourceKeys.forEach(key => {
-            if (!x[key]) {
-                checkKeys = false;
-            } else if (x[key] !== source[key]) {
-                checkKeys = false;
-            }
-        })
+        sourceKeys.forEach(key => (!x[key] || x[key] !== source[key]) ? checkKeys = false : true);
         return checkKeys;
     })
 }
