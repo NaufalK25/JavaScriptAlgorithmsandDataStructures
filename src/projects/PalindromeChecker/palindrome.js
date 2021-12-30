@@ -1,9 +1,8 @@
 const palindrome = (str) => {
-    let reverseStrArr = str.toLowerCase().split('');
+    const reverseStrArr = str.toLowerCase().split('');
     let compareStr = '';
-    for (let char of reverseStrArr) if (/[a-z\d]/.test(char)) compareStr += char;
-    let reverseStr = compareStr.split('').reverse().join('');
-    return compareStr === reverseStr;
+    for (const char of reverseStrArr) compareStr += (/[a-z\d]/.test(char)) ? char : '';
+    return compareStr === compareStr.split('').reverse().join('');
 }
 
 console.log(palindrome("eye"), true);

@@ -1,12 +1,12 @@
 const fearNotLetter = (str) => {
-    let alphaArr = [];
+    const alphaArr = [];
     for (let i = 97; i <= 122; i++) alphaArr.push(String.fromCharCode(i));
-    let alphaStr = alphaArr.join('');
-    let firstChar = str[0];
-    let idxFirstChar = alphaStr.indexOf(firstChar);
-    let idxLastChar = idxFirstChar + str.length + 1;
-    let partStr = alphaStr.slice(idxFirstChar, idxLastChar);
-    for (let char of partStr) if (!str.includes(char)) return char;
+    const alphaStr = alphaArr.join('');
+    const firstChar = str[0];
+    const idxFirstChar = alphaStr.indexOf(firstChar);
+    const idxLastChar = idxFirstChar + str.length + 1;
+    const partStr = alphaStr.slice(idxFirstChar, idxLastChar);
+    for (const char of partStr) if (!str.includes(char)) return char;
 }
 
 console.log(fearNotLetter("abce"), "d");

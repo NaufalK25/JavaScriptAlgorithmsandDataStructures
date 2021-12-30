@@ -36,6 +36,6 @@ See below for an example of a cash-in-drawer array:
   ["FIVE", 55],
   ["TEN", 20],
   ["TWENTY", 60],
-  ["ONE HUNDRED", 100]
-]
+  ["ONE HUNDRED", 100],
+];
 ```

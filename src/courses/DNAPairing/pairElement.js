@@ -1,7 +1,7 @@
 const pairElement = (str) => {
-    let pairArr = [];
-    let strArr = str.split('');
-    for (let dnaPair of strArr) {
+    const pairArr = [];
+    const strArr = str.split('');
+    for (const dnaPair of strArr) {
         switch (dnaPair) {
             case 'A':
                 pairArr.push(['A', 'T']);

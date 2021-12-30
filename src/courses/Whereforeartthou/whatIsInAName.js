@@ -1,5 +1,5 @@
 const whatIsInAName = (collection, source) => {
-    let sourceKeys = Object.keys(source);
+    const sourceKeys = Object.keys(source);
     return collection.filter(x => {
         let checkKeys = true;
         sourceKeys.forEach(key => (!x[key] || x[key] !== source[key]) ? checkKeys = false : true);

@@ -1,14 +1,12 @@
 const rot13 = (str) => {
-    let strArr = str.split('');
-    let rotArr = [];
+    const strArr = str.split('');
+    const rotArr = [];
     for (let i = 0; i < strArr.length; i++) {
         if (/[A-Z]/.test(strArr[i])) {
             let strToASCII = strArr[i].charCodeAt(0);
-            let asciiToStr;
             if (strToASCII >= 65 && strToASCII <= 77) strToASCII += 13;
             else strToASCII -= 13;
-            asciiToStr = String.fromCharCode(strToASCII);
-            rotArr.push(asciiToStr);
+            rotArr.push(String.fromCharCode(strToASCII));
         } else {
             rotArr.push(strArr[i]);
         }

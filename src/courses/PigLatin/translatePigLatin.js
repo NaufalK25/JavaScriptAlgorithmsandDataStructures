@@ -1,6 +1,6 @@
 const translatePigLatin = (str) => {
     let charBeforeVowel = str.split(/[aiueo]/)[0];
-    let restChar = str.replace(charBeforeVowel, '');
+    const restChar = str.replace(charBeforeVowel, '');
     if (!charBeforeVowel) charBeforeVowel = 'w';
     return `${restChar}${charBeforeVowel}ay`;
 }
