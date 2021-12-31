@@ -31,3 +31,15 @@ Complete these 5 JavaScript projects to earn the JavaScript Algorithms and Data 
 3. [Caesars Cipher](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher/)
 4. [Telephone Number Validator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator/)
 5. [Cash Register](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register/)
+
+### Certificate
+
+---
+
+[![JavaScript Algorithms and Data Structures](assets/img/certificate.png)](https://www.freecodecamp.org/certification/fccef7dd44a-1395-47ed-88c4-18f00560d10a/javascript-algorithms-and-data-structures/)
+
+<div align="center">
+    <a href="https://www.freecodecamp.org/certification/fccef7dd44a-1395-47ed-88c4-18f00560d10a/javascript-algorithms-and-data-structures/">
+        JavaScript Algorithms and Data Structures Certificate
+    </a>
+</div>

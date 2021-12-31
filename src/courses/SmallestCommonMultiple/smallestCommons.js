@@ -1,5 +1,16 @@
 const smallestCommons = (arr) => {
-    
+    const range = [...arr].sort((a, b) => a - b);
+    let [a, b] = range;
+    let lcm = a;
+    while (a < b) {
+        if (lcm % a !== 0 || lcm % b !== 0) {
+            lcm += 1;
+            [a, b] = range;
+        } else {
+            a += 1;
+        }
+    }
+    return lcm;
 }
 
 console.log(smallestCommons([1, 5]), 60);
