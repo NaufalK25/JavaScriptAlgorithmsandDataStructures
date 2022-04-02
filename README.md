@@ -36,7 +36,7 @@ Complete these 5 JavaScript projects to earn the JavaScript Algorithms and Data 
 
 ---
 
-[![JavaScript Algorithms and Data Structures](assets/img/certificate.png)](https://www.freecodecamp.org/certification/fccef7dd44a-1395-47ed-88c4-18f00560d10a/javascript-algorithms-and-data-structures/)
+[![JavaScript Algorithms and Data Structures](certificate.png)](https://www.freecodecamp.org/certification/fccef7dd44a-1395-47ed-88c4-18f00560d10a/javascript-algorithms-and-data-structures/)
 
 <div align="center">
     <a href="https://www.freecodecamp.org/certification/fccef7dd44a-1395-47ed-88c4-18f00560d10a/javascript-algorithms-and-data-structures/">
